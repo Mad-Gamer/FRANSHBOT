@@ -58,4 +58,4 @@ client.on('message', message => {
     invites(message, client, prefix);
 });
 
-client.login("NTgwNDg0MDYxNTA0NjAyMTIy.XPY2UA.6kHU0Y4ZKYg4uVlEOFztA_aK6PQ");
+client.login(config.token);

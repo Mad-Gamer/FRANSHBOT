@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 function kick(message,client,prefix, args){
 
 if (message.content.startsWith(prefix+'kick')){
+    if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("nop.");
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Cet utilisateur n'existe pas !");
     let reason = args.join(" ").slice(22);

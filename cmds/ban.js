@@ -3,11 +3,12 @@ const Discord = require('discord.js');
 function ban(message,client,prefix, args){
 
 if (message.content.startsWith(prefix+'ban')){
+    if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("nop.");
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Cet utilisateur n'existe pas !");
     let reason = args.join(" ").slice(22);
 
-    let kickembed = new Discord.RichEmbed()
+    let banembed = new Discord.RichEmbed()
     .setColor("06B201")
     .setTitle("Ban :")
     .addField("Utilisateur ban", `${rUser} | ***ID***: ${rUser.id}`)

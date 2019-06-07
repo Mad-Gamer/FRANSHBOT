@@ -30,7 +30,6 @@
         "didyoumean2": "^1.3.0",
         "discord-emoji": "^1.1.1",
         "discord.js": "^11.4.2",
-        "discord.js-commando": "^0.10.0",
         "erlpack": "^0.1.2",
         "express": "^4.16.2",
         "figlet": "^1.2.0",

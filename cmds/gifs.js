@@ -10,7 +10,6 @@ const giflist = [
     `https://media1.tenor.com/images/4d615cf3736110120a34b969cc485caa/tenor.gif?itemid=10122431`, //gif ma famille dabord
     `https://media1.tenor.com/images/0708db2304e1dc441e96fe276c9426e8/tenor.gif?itemid=14220711`, //gif pikachu
     `https://media1.tenor.com/images/e5dab3697b62150a3b5b0f4b1a1f76f5/tenor.gif?itemid=5571450`, //gif surprise
-    `https://cdn.discordapp.com/attachments/416016969968386059/585525691810971652/FB_IMG_1559670578926.jpg` //petite blague
 ]
 
 function randomItem(array){

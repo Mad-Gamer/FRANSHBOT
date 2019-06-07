@@ -1,14 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const config = require('./config.json');
 
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`casser des maman...`)
+    client.user.setActivity(`casser des serveurs...`)
 
 });
 
-var prefix = "!"
+var prefix = config.token
 client.on('message', message => {
     let messageArray = message.content.split(" ");
     let args = messageArray.slice(1);
@@ -58,4 +59,4 @@ client.on('message', message => {
     invites(message, client, prefix);
 });
 
-client.login("NTgwNDg0MDYxNTA0NjAyMTIy.XPY2UA.6kHU0Y4ZKYg4uVlEOFztA_aK6PQ");
+client.login(config.token);

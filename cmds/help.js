@@ -23,6 +23,7 @@ function help(message, client, prefix) {
   .addField("!userInfo", "information te concernant.")
   .addField("!ping", "le ping du bot.")
   .addField("!level", "regarde ou tu en ais dans tes niveaux.")
+  .addField("!bugs", "en cas de probleme avec le BOT.")
   .setFooter("fait par MadGamer")
 
   message.channel.send(information)

@@ -14,7 +14,7 @@ function level (message, client, prefix) {
     if(userInfo.xp > 100) {
         userInfo.level++
         userInfo.xp = 0
-        message.reply(`Bravo <@${message.author.id}, vous etes au niveau ${userInfo.level}`)
+        message.reply(`Bravo, vous etes au niveau ${userInfo.level}`)
     }
     
     if(message.content.startsWith(prefix+'level')) {

@@ -51,6 +51,9 @@ client.on('message', message => {
     const serverinfo = require('./cmds/serverinfo.js');
     serverinfo(message, client, prefix);
 
+    const userinfo = require('./cmds/userinfo.js');
+    userinfo(message, client, prefix);
+
     const invites = require('./cmds/invites.js');
     invites(message, client, prefix);
 });

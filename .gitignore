@@ -75,4 +75,3 @@ typings/
 # FuseBox cache
 .fusebox/
 config.json
-database.json

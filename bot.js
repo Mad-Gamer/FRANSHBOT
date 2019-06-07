@@ -55,6 +55,9 @@ client.on('message', message => {
     const userinfo = require('./cmds/userinfo.js');
     userinfo(message, client, prefix);
 
+    const bugs = require('./cmds/bugs.js');
+    bugs(message, client, prefix);
+
     const invites = require('./cmds/invites.js');
     invites(message, client, prefix);
 });

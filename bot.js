@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 });
 
-var prefix = config.token
+const prefix = config.prefix
 client.on('message', message => {
     let messageArray = message.content.split(" ");
     let args = messageArray.slice(1);

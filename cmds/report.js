@@ -20,8 +20,7 @@ function report(message,client,prefix, args){
     message.channel.send("Ton rapport a etait envoyer, MERCI");
 
     client.guilds.get('547534390666985487').channels.get('585468050900516864').send(reportembed)
-    client.guilds.get('586468354420899842').channels.get('586468354420899842').send(reportembed)
-
+    
     }   
 }
 

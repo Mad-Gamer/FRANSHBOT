@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const fs = require("fs");
-let db = JSON.parse(fs.readFileSync("./database.json", "utf8"));
+const db = JSON.parse(fs.readFileSync("./database.json", "utf8"));
 
 function level (message, client, prefix) {
 
     // if the user is not on db add the user and change his values to 0
-    let (!db[message.author.id]) `db[message.author.id]` = {
+    if (!db[message.author.id]) db[message.author.id] = {
         xp: 0,
         level: 0
       };

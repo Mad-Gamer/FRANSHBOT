@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const fs = require("fs");
-let db = JSON.parse(fs.readFileSync("./database.json", "utf8"));
 
 function level (message, client, prefix) {
 

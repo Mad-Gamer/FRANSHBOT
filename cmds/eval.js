@@ -9,7 +9,7 @@ function clean(text) {
 
 function eval_cmd(message, client, prefix) {
     
-    if(message.author.id === "564040697154633746") return;
+    if(message.author.id !== "your_id_here") return;
     const args = message.content.split(" ").slice(1);
     if (message.content.startsWith(prefix + "eval")) {
         try {

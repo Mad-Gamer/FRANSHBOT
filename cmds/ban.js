@@ -5,7 +5,7 @@ function ban(message,client,prefix, args){
 if (message.content.startsWith(prefix+'ban')){
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("nop.");
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!rUser) return message.channel.send("Cet utilisateur n'existe pas !");
+    if(!rUser) return message.channel.send("This user does not exist !");
     let reason = args.join(" ").slice(22);
 
     let banembed = new Discord.RichEmbed()
@@ -14,8 +14,8 @@ if (message.content.startsWith(prefix+'ban')){
     .addField("User ban", `${rUser} | ***ID***: ${rUser.id}`)
     .addField("banned by", `${message.author} | ***ID***: ${message.author.id}`)
     .addField("saloon", message.channel)
-    .addField("Heure et date du bannissement", message.createdAt)
-    .addField("Raison du ban", reason)
+    .addField("Time and date of banishment", message.createdAt)
+    .addField("Reason of the ban", reason)
     .setFooter("by MadGamer and MPZ")
     .setTimestamp();
 

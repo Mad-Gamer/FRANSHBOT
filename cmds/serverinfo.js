@@ -7,12 +7,12 @@ function serverinfo(message,client,prefix){
         let serverembed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setAuthor("Server Information", sicon)
-        .addField("Nom du serveur", message.guild.name)
-        .addField("Créée le", message.guild.createdAt)
-        .addField("rejoins le", message.member.joinedAt)
-        .addField("Total de membres", message.guild.memberCount)
-        .addField("Avatar", `[Clique ici pour telecharger pour télécgargé l'avatar du serveur !](${message.guild.iconURL})`)
-        .setFooter("by MadGamer avec l'aide de GREEP !")
+        .addField("Server name", message.guild.name)
+        .addField("Created on", message.guild.createdAt)
+        .addField("join him", message.member.joinedAt)
+        .addField("Total members", message.guild.memberCount)
+        .addField("Avatar", `[Click here to download the server avatar !](${message.guild.iconURL})`)
+        .setFooter("by MadGamer with the help of GREEP !")
 
         message.channel.send(serverembed);
     }

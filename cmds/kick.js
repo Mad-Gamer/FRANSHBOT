@@ -5,21 +5,21 @@ function kick(message,client,prefix, args){
 if (message.content.startsWith(prefix+'kick')){
     if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("nop.");
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!rUser) return message.channel.send("Cet utilisateur n'existe pas !");
+    if(!rUser) return message.channel.send("This user does not exist !");
     let reason = args.join(" ").slice(22);
 
     let kickembed = new Discord.RichEmbed()
     .setColor("06B201")
     .setTitle("Kick :")
-    .addField("Utilisateur kick", `${rUser} | ***ID***: ${rUser.id}`)
-    .addField("Kick par", `${message.author} | ***ID***: ${message.author.id}`)
-    .addField("Salon", message.channel)
-    .addField("Heure et date du kick", message.createdAt)
-    .addField("Raison du kick", reason)
-    .setFooter("Créé par MadGamer avec l'aide de MPZ")
+    .addField("User kick", `${rUser} | ***ID***: ${rUser.id}`)
+    .addField("Kick by", `${message.author} | ***ID***: ${message.author.id}`)
+    .addField("Living room", message.channel)
+    .addField("Time and date of kick", message.createdAt)
+    .addField("Reason kick", reason)
+    .setFooter("Created by MadGamer with the help of MPZ")
     .setTimestamp();
 
-    message.channel.send("Ton kick a bien etait envoyer");
+    message.channel.send("Your kick was sent");
 
     rUser.kick(reason)
 

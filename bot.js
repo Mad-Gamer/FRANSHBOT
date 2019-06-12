@@ -5,7 +5,7 @@ const config = require('./config.json');
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`casser des serveurs...`)
+    client.user.setActivity(`break servers...`)
 
 });
 

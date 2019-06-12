@@ -10,7 +10,7 @@ function help(message, client, prefix) {
   .addField("!gifs", ' amuse toi avec les GIF mais spam pas🤩')
   .addField("!clear", ' efface les messages indesirables')
   .addField("!invites", 'hesite pas a inviter le bot dans ton serveur')
-  .setFooter("fait par MadGamer avec l'aide de MPZ")
+  .setFooter("by MadGamer and MPZ")
 
   message.channel.send(General) // Reponse du bot
 
@@ -24,7 +24,7 @@ function help(message, client, prefix) {
   .addField("!ping", "le ping du bot.")
   .addField("!level", "regarde ou tu en ais dans tes niveaux.")
   .addField("!bugs", "en cas de probleme avec le BOT.")
-  .setFooter("fait par MadGamer")
+  .setFooter("By MadGamer")
 
   message.channel.send(information)
 
@@ -36,7 +36,7 @@ function help(message, client, prefix) {
   .addField("!kick {@user} {reason}", "kick le joeur avec qui tu as un problème.")
   .addField("!ban {@user} {reason}", "ban le joeur avec qui tu as un problème.")
   .addField("!clear", ' efface les messages indesirables')
-  .setFooter("fait par MadGamer")
+  .setFooter("By adGamer")
 
 
   message.channel.send(moderation)

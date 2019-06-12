@@ -7,9 +7,9 @@ function help(message, client, prefix) {
 
   .setColor("#fd0000") // Couleur
   .setTitle("Other for members") // Titre
-  .addField("!gifs", ' amuse toi avec les GIF mais spam pas🤩')
-  .addField("!clear", ' efface les messages indesirables')
-  .addField("!invites", 'hesite pas a inviter le bot dans ton serveur')
+  .addField("!gifs", ' have fun with GIF but not spam🤩')
+  .addField("!clear", ' clears unwanted messages')
+  .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("by MadGamer and MPZ")
 
   message.channel.send(General) // Reponse du bot
@@ -18,12 +18,12 @@ function help(message, client, prefix) {
 
   .setColor("#01FFDD")
   .setTitle("Information any kind")
-  .addField("!serverInfo", "toute les informations concernant le serveur.")
-  .addField("!botinfo", "information sur le bot.")
-  .addField("!userInfo", "information te concernant.")
-  .addField("!ping", "le ping du bot.")
-  .addField("!level", "regarde ou tu en ais dans tes niveaux.")
-  .addField("!bugs", "en cas de probleme avec le BOT.")
+  .addField("!serverInfo", "all information about the server.")
+  .addField("!botinfo", "bot information.")
+  .addField("!userInfo", "information about you.")
+  .addField("!ping", "the ping of the bot.")
+  .addField("!level", "look where you are in your levels.")
+  .addField("!bugs", "in case of problem with the bot.")
   .setFooter("By MadGamer")
 
   message.channel.send(information)
@@ -32,10 +32,10 @@ function help(message, client, prefix) {
 
   .setColor("#01FF16") // Couleur
   .setTitle("Other for the staff") // Titre
-  .addField("!report {@user} {reason}", "signale le joueur si tu as un problème.")
-  .addField("!kick {@user} {reason}", "kick le joeur avec qui tu as un problème.")
-  .addField("!ban {@user} {reason}", "ban le joeur avec qui tu as un problème.")
-  .addField("!clear", ' efface les messages indesirables')
+  .addField("!report {@user} {reason}", "signal the player if you have a problem.")
+  .addField("!kick {@user} {reason}", "kick the player with whom you have a problem.")
+  .addField("!ban {@user} {reason}", "ban the player with whom you have a problem.")
+  .addField("!clear", 'clears unwanted messages')
   .setFooter("By adGamer")
 
 

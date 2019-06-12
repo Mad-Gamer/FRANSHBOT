@@ -5,12 +5,12 @@ const UpTime = (Math.round(client.uptime / (1000 * 60 * 60))) + " hours, " + (Ma
     
 if (message.content.startsWith(prefix+'botinfo')){
         let embed = new Discord.RichEmbed;
-        embed.setTitle('Informations du bot:')
+        embed.setTitle('Bot information:')
         .setAuthor(client.user.username, client.user.displayAvatarURL)
         .setImage(client.user.displayAvatarURL)
-        .addField("Nom sur le serveur:", `<@${client.user.id}>`, true)
+        .addField("Name on the server:", `<@${client.user.id}>`, true)
         .addField("ID:", client.user.id, true)
-        .addField("Avatar", `[Clique ici pour telecharger ton avatar!](${client.user.displayAvatarURL})`)
+        .addField("Avatar", `[Click here to download avatar!](${client.user.displayAvatarURL})`)
         .addField("Uptime", UpTime, true)
 
     message.channel.send(embed)

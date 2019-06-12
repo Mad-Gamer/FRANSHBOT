@@ -21,10 +21,10 @@ function gifs(message,client,prefix){
         let gif = randomItem(giflist)
         let embed = new Discord.RichEmbed()
         embed
-            .setTitle("On rigole bien avec mes GIFS ;D")
+            .setTitle("We laugh with my GIFS ;D")
             .setColor("RANDOM")
             .setImage(gif)
-            .setFooter("by GREEP avec l'aide MadGamer !")
+            .setFooter("by GREEP with help MadGamer !")
         message.channel.send(embed)
     }    
 }

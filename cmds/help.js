@@ -6,7 +6,7 @@ function help(message, client, prefix) {
       let General = new Discord.RichEmbed() // Creation de la commande help definie en embed
 
   .setColor("#fd0000") // Couleur
-  .setTitle("Commande pour les membres") // Titre
+  .setTitle("Other for members") // Titre
   .addField("!gifs", ' amuse toi avec les GIF mais spam pas🤩')
   .addField("!clear", ' efface les messages indesirables')
   .addField("!invites", 'hesite pas a inviter le bot dans ton serveur')
@@ -17,7 +17,7 @@ function help(message, client, prefix) {
   let information = new Discord.RichEmbed()
 
   .setColor("#01FFDD")
-  .setTitle("Informations du serveur et de ces utilisateurs")
+  .setTitle("Information any kind")
   .addField("!serverInfo", "toute les informations concernant le serveur.")
   .addField("!botinfo", "information sur le bot.")
   .addField("!userInfo", "information te concernant.")
@@ -31,7 +31,7 @@ function help(message, client, prefix) {
   let moderation = new Discord.RichEmbed()
 
   .setColor("#01FF16") // Couleur
-  .setTitle("Commandes utilise par le staff du serveur") // Titre
+  .setTitle("Other for the staff") // Titre
   .addField("!report {@user} {reason}", "signale le joueur si tu as un problème.")
   .addField("!kick {@user} {reason}", "kick le joeur avec qui tu as un problème.")
   .addField("!ban {@user} {reason}", "ban le joeur avec qui tu as un problème.")

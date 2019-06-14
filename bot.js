@@ -19,6 +19,9 @@ client.on('message', message => {
     const gifs = require('./cmds/gifs.js');
     gifs(message, client, prefix);
 
+    const ball = require('./cmds/ball.js');
+    ball(message, client, prefix);
+
     const ping = require('./cmds/ping.js');
     ping(message, client, prefix);
 

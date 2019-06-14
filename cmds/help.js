@@ -9,6 +9,7 @@ function help(message, client, prefix) {
   .setTitle("Other for members") // Titre
   .addField("!gifs", ' have fun with GIF but not spam🤩')
   .addField("!clear", ' clears unwanted messages')
+  .addField("!ball", ' ask him a question')
   .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("by MadGamer and MPZ")
 

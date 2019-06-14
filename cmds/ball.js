@@ -39,6 +39,7 @@ function ball(message, client, prefix){
             
         ];
  let args = message.content.split(" ")
+ args.shift()
         function randomItem(array) {
             return array[Math.floor(Math.random() * array.length)];
         }
@@ -46,7 +47,7 @@ function ball(message, client, prefix){
         let reponse = randomItem(reponses);
 
         if (args.length < 1) {
-            message.channel.send('Dis moi une phrase et je te répondrais ⚛️ !');
+            message.channel.send('**Pose moi une question bordel !**');
         } else
             message.channel.send("Voyons....").then((msg) => {
                 msg.edit(`:8ball: | **${reponse}**`);

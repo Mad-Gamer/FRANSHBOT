@@ -26,7 +26,7 @@ function help(message, client, prefix) {
   .addField("!bugs", "in case of problem with the bot.")
   .setFooter("By MadGamer")
 
-  message.channel.send(information)
+  message.channel.send(information) // Reponse du bot
 
   let moderation = new Discord.RichEmbed()
 
@@ -39,7 +39,7 @@ function help(message, client, prefix) {
   .setFooter("By adGamer")
 
 
-  message.channel.send(moderation)
+  message.channel.send(moderation) // Reponse du bot
 
   }
 }

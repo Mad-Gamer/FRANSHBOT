@@ -40,6 +40,7 @@
         "libsodium-wrappers": "^0.7.3",
         "math-expression-evaluator": "^1.2.17",
         "moment": "^2.24.0",
+        "moment-timezone": "^0.5.25",
         "ms": "^2.1.1",
         "node-notifier": "^5.2.1",
         "node-opus": "^0.2.7",

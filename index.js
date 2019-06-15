@@ -7,7 +7,7 @@ client.login("NTgwNDg0MDYxNTA0NjAyMTIy.XORX-w.MLCqON_ek6WYSBCBFdXX6bCwcpM");
 
 client.commands = new Discord.Collection();
 
-fs.readdir("./Commandes/", (error, f) => {
+fs.readdir("./cmds/", (error, f) => {
     if(error) console.log(error);
     
     let commandes = f.filter(f => f.split(".").pop() === "js");
@@ -15,7 +15,7 @@ fs.readdir("./Commandes/", (error, f) => {
 
     commandes.forEach((f) => {
 
-        let commande = require(`./Commandes/${f}`);
+        let commande = require(`./cmds/${f}`);
         console.log(`${f} commande chargée !`);
 
     client.commands.set(commande.help.name, commande);

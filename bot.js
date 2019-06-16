@@ -15,6 +15,9 @@ client.on('message', message => {
     let args = messageArray.slice(1);
 
     if (message.author.bot) return;
+    
+    const eval_cmd = require('./cmds/eval.js');
+    eval_cmd(message, client, prefix);
 
     const gifs = require('./cmds/gifs.js');
     gifs(message, client, prefix);

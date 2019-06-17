@@ -20,7 +20,7 @@ function hms() {
     return time
 }
 
-function timezone(message, client, prefix){
+function time(message, client, prefix){
     if(message.content.startsWith(prefix + "timezone") || message.content.startsWith(prefix + 'time')){
 
 
@@ -39,4 +39,4 @@ message.client.send('Londres: ' + london.format());
 
     message.client.send(timezoneembed)
 
-module.exports = timezone;
+module.exports = time;

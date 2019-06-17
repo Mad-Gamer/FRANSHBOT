@@ -37,6 +37,6 @@ message.client.send('Londres: ' + london.format());
         }
     }
 
-    message.channel.send(timezone)
+    message.client.channel.send(timezone)
 
 module.exports = timezone;

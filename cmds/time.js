@@ -1,9 +1,6 @@
 const Discord = require("discord.js");
 const moment = require('moment-timezone');
 
-function timezone(message, client, prefix){
-    if(message.content === prefix + "timezone"){
-
 function ymd() {
     var date = new Date();
     var year = date.getFullYear();
@@ -23,15 +20,19 @@ function hms() {
     return time
 }
 
-console.log(`PC: ${ymd(0)} - ${hms(0)}`)
+function timezone(message, client, prefix){
+    if(message.content === prefix + "timezone"){
+
+
+message.client.send(`PC: ${ymd(0)} - ${hms(0)}`)
 
 
 const france = moment.tz(`${ymd(0)} ${hms(0)}`, "Europe/Paris");
 const losAngeles = france.clone().tz("America/Los_Angeles");
 const london = france.clone().tz("Europe/London");
 
-console.log('LA: ' + losAngeles.format());
-console.log('Londres: ' + london.format());
+message.client.send('LA: ' + losAngeles.format());
+message.client.send('Londres: ' + london.format());
 
         }
     }

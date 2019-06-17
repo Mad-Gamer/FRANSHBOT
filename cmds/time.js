@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const moment = require('moment-timezone');
 
 function timezone(message, client, prefix){
-if (message.content.startsWith(prefix+'timezone')){
+    if(message.content === prefix + "timezone"){
 
 function ymd() {
     var date = new Date();
@@ -35,5 +35,7 @@ console.log('Londres: ' + london.format());
 
         }
     }
+
+    message.channel.send(embed)
 
 module.exports = timezone;

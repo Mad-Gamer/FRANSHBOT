@@ -10,6 +10,7 @@ function help(message, client, prefix) {
   .addField("!gifs", ' have fun with GIF but not spam🤩')
   .addField("!clear", ' clears unwanted messages')
   .addField("!8ball", ' ask him a question')
+  .addField("!time", ' have fun with GIF but not spam🤩')
   .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("by MadGamer and MPZ")
 

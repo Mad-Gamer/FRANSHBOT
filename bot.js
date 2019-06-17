@@ -19,7 +19,7 @@ client.on('message', message => {
     const gifs = require('./cmds/gifs.js');
     gifs(message, client, prefix);
 
-    const timezone = require('./cmds/timezone.js');
+    const timezone = require('./cmds/moment-timezone.js');
     timezone(message, client, prefix);
 
     const ball = require('./cmds/ball.js');

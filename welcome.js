@@ -3,8 +3,7 @@ const Discord = require('discord.js');
 const messages = [
     'welcome to the huge live and game cave :wave:',
     'Welcom to TwitchMadGaming :sunny:',
-    'Hello, I hope you like it here.  <:MinnionExcited:https://media1.tenor.com/images/091dce7dfd72eaf126bb4767737c1a7b/tenor.gif?itemid=10479416>'
-];
+    'Hello, I hope you like it here.'],
 
 const images = [
     `https://media1.tenor.com/images/537b00dd8bdac0fb1831e5930dfdc9bd/tenor.gif?itemid=12025865`, //shrekgif

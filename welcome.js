@@ -30,7 +30,7 @@ function welcome(member, client) {
         .setTimestamp()
         .addField(`${welcomemsg}`, `<@${member.user.id}>`)
         .setImage(`${welcomeimg}`)
-        .setFooter(`${member.user.username} just landed in the Kingdom of Corona!`, `${member.user.displayAvatarURL}`)
+        .setFooter(`${member.user.username} Welcome to my GamingRoom!`, `${member.user.displayAvatarURL}`)
     client.guilds.get('590579346272682032').channels.get('590579346272682032').send(embed);
 }
 

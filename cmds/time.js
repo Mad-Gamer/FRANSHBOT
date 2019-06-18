@@ -21,22 +21,17 @@ function hms() {
 }
 
 function time(message, client, prefix){
+    
     if(message.content.startsWith(prefix + "timezone") || message.content.startsWith(prefix + 'time')){
+        let args = message.content.split(" ")
+        args.shift()
+        if (args.length < 1) return message.reply('what is your timezone ?\nExample: America/New York');
 
 
-message.client.send(`PC: ${ymd(0)} - ${hms(0)}`)
-
-
-const france = moment.tz(`${ymd(0)} ${hms(0)}`, "Europe/Paris");
-const losAngeles = france.clone().tz("America/Los_Angeles");
-const london = france.clone().tz("Europe/London");
-
-message.client.send('LA: ' + losAngeles.format());
-message.client.send('Londres: ' + london.format());
-
-        }
+        const france = moment.tz(`${ymd(0)} ${hms(0)}`, "Europe/Paris");
+        const convertime = france.clone().tz(args.join("_"));
+        message.channel.send(`Your time in ${args.join(" ")} is:\`\`\`${convertime}\`\`\``)
     }
-
-    message.client.send(timezoneembed)
+}
 
 module.exports = time;

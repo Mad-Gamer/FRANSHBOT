@@ -4,16 +4,16 @@ const Discord = require('discord.js');
 function help(message, client, prefix) {
   if (message.content.startsWith(prefix + 'help') || message.content.startsWith(prefix + 'commands')) {
 
-    let information = new Discord.RichEmbed()
+    let link = new Discord.RichEmbed()
 
   .setColor("#01FFDD")
-  .setTitle("Information any kind")
+  .setTitle("link any kind")
   .addField("!twitchlive", "voici ma chaine twitch et on vise les 50 followers ;).")
   .addField("!yt", "is the research you want me to do..")
   .addField("!google", "is also the research you want me to do.")
   .setFooter("By MadGamer")
 
-  message.channel.send(information) // Reponse du bot
+  message.channel.send(link) // Reponse du bot
 
       let General = new Discord.RichEmbed() // Creation de la commande help definie en embed
 

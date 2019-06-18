@@ -9,6 +9,8 @@ client.on('ready', () => {
 
 });
 
+client.on('guildMemberJoin', function(message, client){'590579346272682032'}) //lid du salon
+
 const prefix = config.prefix
 client.on('message', message => {
     let messageArray = message.content.split(" ");

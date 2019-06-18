@@ -1,42 +1,21 @@
 const Discord = require('discord.js');
 
 const messages = [
-    'Welcome and hello to Kingdom of Corona :sunny:',
-    'Welcome, welcome to Kingdom Of Corona :sunny:',
-    'Hello and welcome :sunny:, we are so happy that you are with us <:RapunzelExcited:570818890259628052>. Have a great time here!',
-    ':wave:',
-    '<:RapunzelExcited:570818890259628052>',
-    'Have a great time here! <:PascalYes:567339119009726474>',
-    'Hello! <:heureuse:570820764799074335>',
-    'Welcome, welcome to Kingdom of Corona :sunny: Have a good time here <:PascalYes:567339119009726474>',
-    'Ciao!',
-    'Bienvenue !',
-    'Put down your luggages and enjoy the kingdom! :sunny:'
-];
+    'welcome to the huge live and game cave :wave:',
+    'Welcom to TwitchMadGaming :sunny:',
+    'Hello, I hope you like it here.'],
 
 const images = [
-    'https://33.media.tumblr.com/066f8253a3d4ca6d71874b1635dfbb70/tumblr_n3pqzbd7z61sv70dvo1_500.gif',
-    'http://media.tumblr.com/tumblr_mc0em0UTiu1rrpsd7.gif',
-    'https://media.giphy.com/media/L0mK6P5eYf6Ug/giphy.gif',
-    'https://media.giphy.com/media/JS2YlygH2zxEA/giphy.gif',
-    'https://media1.tenor.com/images/ca53870091f48f62078ace583e8300f3/tenor.gif',
-    'http://media.tumblr.com/tumblr_lrubq5GGpe1qgbfe7.gif',
-    'http://www.youloveit.com/uploads/posts/2017-11/1511021101_youloveit_com_tangled_the_series_animated_gifs_emotions01.gif',
-    'http://www.youloveit.com/uploads/posts/2017-11/1511021122_youloveit_com_tangled_the_series_animated_gifs_emotions02.gif',
-    'http://www.youloveit.com/uploads/posts/2017-11/1511021094_youloveit_com_tangled_the_series_animated_gifs_emotions03.gif',
-    'http://www.youloveit.com/uploads/posts/2017-11/1511021100_youloveit_com_tangled_the_series_animated_gifs_emotions06.gif',
-    'https://cdn.discordapp.com/attachments/562602234265731082/574481344441352233/XKShbcp1lDJ8A.gif',
-    'https://cdn.discordapp.com/attachments/573609067289772032/575148267894079488/ezgif-2-80aa2012917b.gif',
-    'https://cdn.discordapp.com/attachments/562602234265731082/575283526686081024/32432.gif',
-    'https://cdn.discordapp.com/attachments/562602234265731082/575142999705780234/1557187507360.gif',
-    'https://cdn.discordapp.com/attachments/562602234265731082/575139288153587712/1557115041264.jpg',
-    'https://66.media.tumblr.com/45d7af9acd63612013699f006a3f48fd/tumblr_pbsd0wh7Uk1r6424jo1_500.gif',
-    'https://cdn.discordapp.com/attachments/562612494640873483/576750451136004106/c0e85ffaf3cee383f551ad25edb1675d.gif',
-    'https://i.ytimg.com/vi/OcFj0IlM32Y/maxresdefault.jpg',
-    'https://cdn.discordapp.com/attachments/573609067289772032/576343400060813315/1557465852325.png',
-    'https://cdn.discordapp.com/attachments/562602234265731082/577754931155566603/1557816464452.png',
-    'https://cdn.discordapp.com/attachments/562602234265731082/580088878992719897/1558324778686.gif',
-    'http://is2.4chan.org/co/1558373572716.gif'
+    `https://media1.tenor.com/images/537b00dd8bdac0fb1831e5930dfdc9bd/tenor.gif?itemid=12025865`, //shrekgif
+    `https://medias.francoischarron.com/thumbnail/medias.francoischarron.com/gifs/original/gif-humour-7Dn7VkrKPa.gif`, //gifjoconde
+    `https://media.tenor.com/images/c93f6b355513bf7c1b3c415a83323fcd/tenor.gif`, //gifsimpson
+    `https://media.tenor.com/images/f1b4974edac7876dc2fba34b3ecb2d50/tenor.gif`, //gif bobl'éponge
+    `https://media.tenor.com/images/99f451146a0e21070f57bbd648723e4c/tenor.gif`, //gif avengers
+    `https://media1.tenor.com/images/83e350b1245c670d8491958aa6029779/tenor.gif?itemid=4972673`, //gif cat
+    `https://media1.tenor.com/images/4d615cf3736110120a34b969cc485caa/tenor.gif?itemid=10122431`, //gif ma famille dabord
+    `https://media1.tenor.com/images/0708db2304e1dc441e96fe276c9426e8/tenor.gif?itemid=14220711`, //gif pikachu
+    `https://media1.tenor.com/images/e5dab3697b62150a3b5b0f4b1a1f76f5/tenor.gif?itemid=5571450`,//gif surprise
+    `https://media1.tenor.com/images/091dce7dfd72eaf126bb4767737c1a7b/tenor.gif?itemid=10479416` //gif de bienvenu
 ];
 
 function randomItem(array) {

@@ -3,6 +3,18 @@ const Discord = require('discord.js');
 
 function help(message, client, prefix) {
   if (message.content.startsWith(prefix + 'help') || message.content.startsWith(prefix + 'commands')) {
+
+    let information = new Discord.RichEmbed()
+
+  .setColor("#01FFDD")
+  .setTitle("Information any kind")
+  .addField("!twitchlive", "voici ma chaine twitch et on vise les 50 followers ;).")
+  .addField("!yt", "is the research you want me to do..")
+  .addField("!google", "is also the research you want me to do.")
+  .setFooter("By MadGamer")
+
+  message.channel.send(information) // Reponse du bot
+
       let General = new Discord.RichEmbed() // Creation de la commande help definie en embed
 
   .setColor("#fd0000") // Couleur
@@ -10,7 +22,7 @@ function help(message, client, prefix) {
   .addField("!gifs", ' have fun with GIF but not spam🤩')
   .addField("!clear", ' clears unwanted messages')
   .addField("!8ball", ' ask him a question')
-  .addField("!time", ' have fun with GIF but not spam🤩')
+  .addField("!time", ' you want to know the time of any country then type the command')
   .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("by MadGamer and MPZ")
 

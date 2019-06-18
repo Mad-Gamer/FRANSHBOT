@@ -32,7 +32,7 @@ function welcome(member, client) {
         .addField(`${welcomemsg}`, `<@${member.user.id}>`)
         .setImage(`${welcomeimg}`)
         .setFooter(`${member.user.username} just entered the magic cave !`, `${member.user.displayAvatarURL}`)
-    client.guilds.get('562602234265731080').channels.get('562611657419784202').send(embed);
+    client.guilds.get('590579346272682032').channels.get('590579346272682032').send(embed);
 }
 
 module.exports = welcome;

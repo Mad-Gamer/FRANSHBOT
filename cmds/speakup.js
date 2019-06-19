@@ -16,7 +16,7 @@ function speakup(message, client, prefix) {
     }
 
     if (message.content.startsWith(prefix + 'speakup')) {
-        let rquote = randomItem(quotes);
+        let rspeakup = randomItem(speakup);
 
         let embed = new Discord.RichEmbed()
             embed.setColor("#4C01C4")

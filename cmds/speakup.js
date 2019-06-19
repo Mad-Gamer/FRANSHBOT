@@ -20,9 +20,9 @@ function speakup(message, client, prefix) {
 
         let embed = new Discord.RichEmbed()
             embed.setColor("#4C01C4")
-                .addField("Random Tangled quote :", `${rspeakup}`)
+                .addField("here is one answer among others :", `${rspeakup}`)
                 .setFooter("don't worry about any more sentences coming soon so no you can propose some.")
-                .setFooter(`Another? ${prefix}speakup`, `${client.user.avatarURL}`)
+                .setFooter(`you're still mad at me, so type the following command? ${prefix}speakup`, `${client.user.avatarURL}`)
             message.channel.send({ embed: embed })
     }
 }

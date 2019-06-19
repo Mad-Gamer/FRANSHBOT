@@ -19,6 +19,9 @@ client.on('message', message => {
     const gifs = require('./cmds/gifs.js');
     gifs(message, client, prefix);
 
+    const speakup = require('./cmds/speakup.js');
+    speakup(message, client, prefix);
+
     const time = require('./cmds/time.js');
     time(message, client, prefix);
 

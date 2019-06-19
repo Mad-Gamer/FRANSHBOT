@@ -20,6 +20,7 @@ function help(message, client, prefix) {
   .setColor("#fd0000") // Couleur
   .setTitle("Other for members") // Titre
   .addField("!gifs", ' have fun with GIF but not spam🤩')
+  .addField("!speakup", "Talk to me, please. I'm bored. :(")
   .addField("!clear", ' clears unwanted messages')
   .addField("!8ball", ' ask him a question')
   .addField("!time", ' you want to know the time of any country then type the command')

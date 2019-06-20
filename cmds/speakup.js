@@ -23,6 +23,7 @@ function speakup(message, client, prefix) {
                 .addField("here is one answer among others :", `${rspeakup}`)
                 .setFooter("don't worry about any more sentences coming soon so no you can propose some.")
                 .setFooter(`you're still mad at me, so type the following command? ${prefix}speakup`, `${client.user.avatarURL}`)
+                .setFooter(`By MadGamer`)
             message.channel.send({ embed: embed })
     }
 }

@@ -1,7 +1,38 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
+const cooldowns = new Discord.Collection();
+const logchannel = '591620909987790879'
+const getlogchannel = () => client.channels.get(logchannel)
 
+function functiondate() {
+    const datefu = new Date();
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const year = datefu.getFullYear();
+    const month = months[datefu.getMonth()];
+    const getdate = datefu.getDate();
+    const date = getdate + ' ' + month + ' ' + year;
+    return date;
+};
+
+function functiontime() {
+    const datefu = new Date();
+    const hour = datefu.getHours();
+    const min = datefu.getMinutes();
+    const sec = datefu.getSeconds();
+    const time = hour + ':' + min + ':' + sec;
+    return time
+}
+
+const WatchDogs_3_countdown = require('./counter/WatchDogs3.js');
+
+client.on('ready', () => {
+    const readylog = `Logged in as ${client.user.tag}!\nOn ${functiondate(0)} at ${functiontime(0)}`
+    console.log(readylog);
+    getlogchannel().send(readylog);
+    client.user.setStatus('dnd')
+    WatchDogs_3_countdown(client);
+});
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);

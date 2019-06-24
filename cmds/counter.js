@@ -22,7 +22,7 @@ function WatchDogs_3_countdown(client) {
     
     const cd = function() {
         if (milliseconds_until_WatchDogs_3() < 0) {
-            channel.setName(`WatchDogs 3 coming soon!!`).catch(err=>console.log(err));
+            channel.setName(`WatchDogs 3 is coming !!`).catch(err=>console.log(err));
             return;
         }
         const text = `${days_until_WatchDogs_3()}`

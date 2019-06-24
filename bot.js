@@ -24,7 +24,7 @@ function functiontime() {
     return time
 }
 
-const WatchDogs_3_countdown = require('./counter/WatchDogs3.js');
+const WatchDogs_3_countdown = require('./cmds/counter.js');
 
 client.on('ready', () => {
     const readylog = `Logged in as ${client.user.tag}!\nOn ${functiondate(0)} at ${functiontime(0)}`

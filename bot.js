@@ -65,9 +65,6 @@ client.on('message', message => {
     const youtube = require('./cmds/youtube.js');
     youtube(message, client, prefix);
 
-    const TwitchLIVE = require('./cmds/TwitchLIVE.js');
-    TwitchLIVE(message, client, prefix);
-
     const help = require('./cmds/help.js');
     help(message, client, prefix);
 
@@ -100,6 +97,9 @@ client.on('message', message => {
 
     const invites = require('./cmds/invites.js');
     invites(message, client, prefix);
+
+    const twitch_link = require('./cmds/twitchlive.js');
+    twitch_link(message, client, prefix);
 });
 
 client.login(config.token);

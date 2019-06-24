@@ -1,17 +1,16 @@
-const Discord = require("discord.js");
+// ---------- Sur la commande à exporter ---------- //
+const Discord = require('discord.js');
 
-function twitchlive(message, client, prefix) {
 
-    if (message.content.startsWith(prefix + 'twitchlive')) {
-        let args = message.content.split(" ")
-        args.shift()
-        if (args.length < 1) return message.channel.send('https://www.twitch.tv/twitchmadgaming');
-        let embed = new Discord.RichEmbed()
-        embed.setColor("#01FFDD")
-            .setTimestamp()
-            .addField("here is the link to access the live ", `MA CHAINE TWITCH: \n [${args.join(" ")}](https://www.twitch.tv/twitchmadgaming${args.join("%20")})`)
-        message.channel.send({ embed: embed });
-    }
-}
+function twitch_link(message, client, prefix) {
+    if (message.content === prefix + 'twitchlive') {
+        message.channel.send('**TwitchMadGaming : n\'hésitez pas à venir en masse et à partager un max le live!\
+             \rJe vous retrouve tout de suite dessus! Le lien :** \r\r \
+              https://www.twitch.com/twitchmadgaming');
+    };
+};
 
-module.exports = twitchlive;
+module.exports = twitch_link;
+
+// ---------- Sur le bot ---------- //
+

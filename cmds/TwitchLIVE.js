@@ -1,4 +1,3 @@
-// ---------- Sur la commande à exporter ---------- //
 const Discord = require('discord.js');
 
 
@@ -11,6 +10,3 @@ function twitch_link(message, client, prefix) {
 };
 
 module.exports = twitch_link;
-
-// ---------- Sur le bot ---------- //
-

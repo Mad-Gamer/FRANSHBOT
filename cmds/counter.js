@@ -8,7 +8,7 @@ function days_until_WatchDogs_3(){
     return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 function milliseconds_until_WatchDogs_3(){
-    return Date.parse("Mars 6 2020 00:00:00 GMT-0400") - Date.parse(new Date());
+    return Date.parse("Mars 6 2020 00:00:00 GMT+0200") - Date.parse(new Date());
 }
 
 

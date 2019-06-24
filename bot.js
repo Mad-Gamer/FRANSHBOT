@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 const cooldowns = new Discord.Collection();
-const logchannel = '591620909987790879'
-const getlogchannel = () => client.channels.get(logchannel)
 
 function functiondate() {
     const datefu = new Date();
@@ -29,7 +27,6 @@ const WatchDogs_3_countdown = require('./cmds/counter.js');
 client.on('ready', () => {
     const readylog = `Logged in as ${client.user.tag}!\nOn ${functiondate(0)} at ${functiontime(0)}`
     console.log(readylog);
-    getlogchannel().send(readylog);
     client.user.setStatus('dnd')
     WatchDogs_3_countdown(client);
 });

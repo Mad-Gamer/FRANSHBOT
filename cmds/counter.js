@@ -15,14 +15,12 @@ function milliseconds_until_WatchDogs_3(){
 function WatchDogs_3_countdown(client) {
     const channel = client.channels.get('591620909987790879');
         if (!channel) {
-        console.log(`Channel: ${channel_id} cannot be found`);
+        console.log(`Channel: ${channel.name} cannot be found`);
         return;
     }
-}
-    
     const cd = function() {
         if (milliseconds_until_WatchDogs_3() < 0) {
-            channel.setName(`WatchDogs 3 is coming !!`).catch(err=>console.log(err));
+            channel.setName(`WatchDogs 3 coming soon!!`).catch(err=>console.log(err));
             return;
         }
         const text = `${days_until_WatchDogs_3()}`
@@ -31,6 +29,9 @@ function WatchDogs_3_countdown(client) {
             .catch(err=>console.log(err));
     };
     cd();
+}
+    
+    
 
 
 module.exports = WatchDogs_3_countdown;

@@ -9,7 +9,7 @@ if (message.content.startsWith(prefix+'ban')){
     let reason = args.join(" ").slice(22);
 
     let banembed = new Discord.RichEmbed()
-    .setColor("06B201")
+    .setColor("#06B201")
     .setTitle("Ban :")
     .addField("User ban", `${rUser} | ***ID***: ${rUser.id}`)
     .addField("banned by", `${message.author} | ***ID***: ${message.author.id}`)

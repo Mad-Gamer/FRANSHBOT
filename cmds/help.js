@@ -11,6 +11,7 @@ function help(message, client, prefix) {
   .addField("!twitchlive", "voici ma chaine twitch et on vise les 50 followers ;).")
   .addField("!yt", "is the research you want me to do..")
   .addField("!google", "is also the research you want me to do.")
+  .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("By MadGamer")
 
   message.channel.send(link) // Reponse du bot
@@ -21,10 +22,8 @@ function help(message, client, prefix) {
   .setTitle("Other for members") // Titre
   .addField("!gifs", ' have fun with GIF but not spam🤩')
   .addField("!speakup", "Talk to me, please. I'm bored. :(")
-  .addField("!clear", ' clears unwanted messages')
   .addField("!8ball", ' ask him a question')
   .addField("!time", ' you want to know the time of any country then type the command')
-  .addField("!invites", 'do not hesitate to invite the bot to your server')
   .setFooter("by MadGamer and MPZ")
 
   message.channel.send(General) // Reponse du bot

@@ -105,16 +105,12 @@ client.on('message', message => {
 client.on('guildCreate', guild => {
     const botjoinguildlog = `${client.user.username} joined __${guild.name}__\n*ID: ${guild.id}*` 
     console.log(`[${functiondate(0)} - ${functiontime(0)}]\n${botjoinguildlog}`)
-    getlogchannel().send(botjoinguildlog)
-    lant_num_guilds(); 
+
 });
 
 client.on('guildDelete', guild => { 
     const botleftguildlog = `${client.user.username} left __${guild.name}__\n*ID: ${guild.id}*`
     console.log(`[${functiondate(0)} - ${functiontime(0)}]\n${botleftguildlog}`)
-    getlogchannel().send(botleftguildlog)
-    lant_num_guilds()
-
 });
 
 

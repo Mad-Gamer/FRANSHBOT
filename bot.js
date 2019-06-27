@@ -25,6 +25,12 @@ function functiontime() {
 
 const WatchDogs_3_countdown = require('./cmds/counter.js');
 
+function updateStatus(guild){
+    let max = guild.memberCount-1;
+    let formatString = `Nous sommes ${max}`
+    let channel = client.channels.get(channelID);
+    channel.setName(formatString);
+}
 client.on('ready', () => {
     const readylog = `Logged in as ${client.user.tag}!\nOn ${functiondate(0)} at ${functiontime(0)}`
     console.log(readylog);
@@ -34,8 +40,7 @@ client.on('ready', () => {
 
 function updateStatus(guild){
     let max = guild.memberCount-1;
-    let online = guild.members.filter(m => m.presence.status != 'offline').size-1;
-    let formatString = 'Il y a : ' + online + '/' + max;
+    let formatString = `Nous sommes ${max}`
     let channel = client.channels.get(channelID);
     channel.setName(formatString);
 }
@@ -125,8 +130,5 @@ client.on('guildMemberRemove', function (member) {
     updateStatus(member.guild);
 });
 
-client.on('presenceUpdate', function (member) {
-    updateStatus(member.guild);
-});
 
 client.login(config.token);

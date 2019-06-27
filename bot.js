@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 const cooldowns = new Discord.Collection();
+const channelID = '593804684951683083';
 
 function functiondate() {
     const datefu = new Date();
@@ -31,11 +32,15 @@ client.on('ready', () => {
     WatchDogs_3_countdown(client);
 });
 
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`break servers...`)
-
-});
+function updateStatus(guild){
+    let max = guild.memberCount-1;
+    let online = guild.members.filter(m => m.presence.status != 'offline').size-1;
+    let formatString = 'Il y a : ' + online + '/' + max;
+    let channel = guild.channels.get(channelID);
+    if(channel.name !== formatString){
+        channel.setName(formatString);
+    }
+}
 
 const prefix = config.prefix
 client.on('message', message => {
@@ -114,5 +119,16 @@ client.on('guildDelete', guild => {
     console.log(`[${functiondate(0)} - ${functiontime(0)}]\n${botleftguildlog}`)
 });
 
+client.on('guildMemberAdd', function (member) {
+    updateStatus(member.guild);
+});
+
+client.on('guildMemberRemove', function (member) {
+    updateStatus(member.guild);
+});
+
+client.on('presenceUpdate', function (member) {
+    updateStatus(member.guild);
+});
 
 client.login(config.token);

@@ -13,9 +13,9 @@ function days_until_WatchDogs_3(){
 }
 
 function WatchDogs_3_countdown(client) {
-    const channel = client.channels.get('591620909987790879');
+    const channel = client.channels.get('593723613874618379');
         if (!channel) {
-        console.log(`Channel: ${channel.name} cannot be found`);
+        console.log(`Channel: ${channel.id} cannot be found`);
         return;
     }
     const cd = function() {

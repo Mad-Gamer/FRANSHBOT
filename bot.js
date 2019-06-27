@@ -39,6 +39,7 @@ client.on('ready', () => {
 
 const prefix = config.prefix
 client.on('message', message => {
+    WatchDogs_3_countdown(client);
     let messageArray = message.content.split(" ");
     let args = messageArray.slice(1);
 

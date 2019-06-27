@@ -36,10 +36,8 @@ function updateStatus(guild){
     let max = guild.memberCount-1;
     let online = guild.members.filter(m => m.presence.status != 'offline').size-1;
     let formatString = 'Il y a : ' + online + '/' + max;
-    let channel = guild.channels.get(channelID);
-    if(channel.name !== formatString){
-        channel.setName(formatString);
-    }
+    let channel = client.channels.get(channelID);
+    channel.setName(formatString);
 }
 
 const prefix = config.prefix

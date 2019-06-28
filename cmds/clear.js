@@ -8,7 +8,7 @@ function clear(message, client, prefix, args) {
         if(!args[0]) return message.channel.send("How many messages you want to clear ?").then(msg => msg.delete(3000));
         if (args[0] > 100) return message.channel.send(":negative_squared_cross_mark: You can not clear more than 100 messages!").then(msg => msg.delete(3000));
         message.channel.bulkDelete(args[0]).then(() => {
-            message.channel.send(`:+1: **You have cleared ${args[0]} messages.**`).then(msg => msg.delete(3000));
+            message.channel.send(`:+1: **You have cleared ${args[0]} messages.**`).then(msg => msg.delete(1000));
         });
     }
 }

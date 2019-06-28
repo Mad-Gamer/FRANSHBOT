@@ -23,7 +23,7 @@ if (message.content.startsWith(prefix+'kick')){
 
     rUser.kick(reason)
 
-    client.guilds.get('547534390666985487').channels.get('585468050900516864').send(reportembed)
+    //client.guilds.get('547534390666985487').channels.get('585468050900516864').send(reportembed)
 
     }   
 }

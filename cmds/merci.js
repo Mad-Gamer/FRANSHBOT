@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-function help(message, client, prefix) {
+function merci(message, client, prefix) {
   if (message.content.startsWith(prefix + 'merci') || message.content.startsWith(prefix + 'commands')) {
 
     let link = new Discord.RichEmbed()

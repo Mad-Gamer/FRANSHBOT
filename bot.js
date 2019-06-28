@@ -56,6 +56,9 @@ client.on('message', message => {
     const gifs = require('./cmds/gifs.js');
     gifs(message, client, prefix);
 
+    const merci = require('./cmds/merci.js');
+    merci(message, client, prefix);
+
     const speakup = require('./cmds/speakup.js');
     speakup(message, client, prefix);
 

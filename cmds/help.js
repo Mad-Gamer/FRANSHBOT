@@ -44,7 +44,7 @@ function help(message, client, prefix) {
 
   let moderation = new Discord.RichEmbed()
 
-  .setColor("#01FF16") // Couleur
+  .setColor("#DFFE00") // Couleur
   .setTitle("Other for the staff") // Titre
   .addField("!report {@user} {reason}", "signal the player if you have a problem.")
   .addField("!kick {@user} {reason}", "kick the player with whom you have a problem.")
@@ -54,6 +54,14 @@ function help(message, client, prefix) {
 
 
   message.channel.send(moderation) // Reponse du bot
+
+  let FIN = new Discord.RichEmbed()
+  .setColor("#00FE38")
+  .setTitle("remerciement")
+  .addField("!merci si tu veut lire mes remerciementa toute les personne qui on contribuer a la construction de ce BOT")
+  .setFooter("By adGamer")
+
+  message.channel.send(FIN)
 
   }
 }

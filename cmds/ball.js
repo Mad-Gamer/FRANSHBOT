@@ -5,33 +5,34 @@ function ball(message, client, prefix){
     if(message.content.startsWith(prefix + "8ball") || message.content.startsWith(prefix + '8b')){
         const reponses = [
             'shortly',
-            'yes',
-            'Absolutely!',
+            'oui',
+            'absolument!',
             'Jamais',
-            'When you are ready.',
-            'hopefully',
-            "I am a bot I can not answer you",
-            'N\'hope not',
-            'Why are you asking this?',
-            'What kind of question is this?',
-            'On my corpse!',
-            'Haha, good joke !',
-            'Who are you ?',
-            'Would you be a cousin of Lepen ??',
+            'Quand vous serez prêt.',
+            'avec un peu de chance',
+            "Je suis un bot je ne peux pas vous répondre",
+            'N\'no ntm',
+            'Pourquoi tu me demandes ça ??',
+            'MIAW MIAW NIBBA',
+            'Sur mon cadavre!',
+            'Haha, bonne blague !',
+            'Qui est tu ?',
+            'Seriez-vous un cousin de Lepen ??',
             'NO',
-            "it's funny ptdr",
+            "c'est marrant ptdr",
             "01110010110000111010101010011",
-            "Fault 404",
+            "erreur 404",
             ". . .",
-            "JPP I am dead",
-            "or else think about it and you will be able to be the answer ! *if not what you are con*",
+            "JPP je suis mort",
+            "ou bien pensez-y et vous serez en mesure d'être la réponse. !",
             "AH !",
-            "You are a sub race",
-            "You suck for a Mars ?",
-            "Euuuh fuck your mother",
-            "You're funny, you -_-",
-            "Ask your mother",
-            "Do not rage my child",
+            "Vous êtes une sous-race",
+            "Tu suce pour un Mars ?",
+            "Euuuh Va te faire foutre, ta mère.",
+            "Tu es drôle, -_-",
+            "Demande à ta mère",
+            "Ne ragez pas mon enfant",
+        
             
             
         ];
@@ -44,9 +45,9 @@ function ball(message, client, prefix){
         let reponse = randomItem(reponses);
 
         if (args.length < 1) {
-            message.channel.send('**Ask me a question brothel !**');
+            message.channel.send('**Pose moi une question bordel !**');
         } else
-            message.channel.send("Let's....").then((msg) => {
+            message.channel.send("Allons....").then((msg) => {
                 msg.edit(`:8ball: | **${reponse}**`);
             });
 }      

@@ -11,8 +11,6 @@ function help(message, client, prefix) {
   .setFooter("By MadGamer")
 
   message.channel.send(link) // Reponse du bot
-
-      let General = new Discord.RichEmbed()
     
   }
 }

@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 function merci(message, client, prefix) {
-  if (message.content.startsWith(prefix + 'merci') || message.content.startsWith(prefix + 'commands')) {
+  if (message.content.startsWith(prefix + 'merci'))
 
     let link = new Discord.RichEmbed()
 
@@ -13,6 +13,5 @@ function merci(message, client, prefix) {
   message.channel.send(link) // Reponse du bot
     
   }
-}
 
   module.exports = merci;

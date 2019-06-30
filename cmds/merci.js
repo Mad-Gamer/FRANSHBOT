@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 function merci(message, client, prefix) {
   if (message.content.startsWith(prefix + 'merci'))
 
-    let link = new Discord.RichEmbed()
+    let merci = new Discord.RichEmbed()
 
   .setColor("#01FFDD")
   .setTitle("MERCI A TOUS")

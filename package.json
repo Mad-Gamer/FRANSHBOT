@@ -31,7 +31,7 @@
         "discord-emoji": "^1.1.1",
         "discord.js": "^11.4.2",
         "erlpack": "^0.1.2",
-        "express": "^4.16.2",
+        "express": "^4.17.3",
         "figlet": "^1.2.0",
         "fs": "^0.0.1-security",
         "fs-extra": "^5.0.0",
